@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landing_page_background"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewTravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/travel"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:alpha="0.78"
+        android:textColor="#345DCF"
+        android:layout_marginTop="175dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:alpha="0.78"
+        android:text="@string/guid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#BF5D5D"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textViewTravel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTravel" />
+
+
+    <ImageView
+        android:id="@+id/image_flight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintDimensionRatio="5:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTravel"
+        app:srcCompat="@drawable/airplane_png_image_4095"
+        android:contentDescription="@null"/>
+
+
+    <ImageView
+        android:id="@+id/globe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="5:2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="-350dp"
+        android:layout_marginBottom="-20dp"
+        app:srcCompat="@drawable/free_png_hd_world_globe_world_globe_png_image_39522_globe_png_1000"
+        android:contentDescription="@null"/>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="6:10"
+        android:layout_marginStart="-160dp"
+        android:layout_marginBottom="-70dp"
+        android:rotation="45"
+        android:alpha="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/m1wujq"
+        android:contentDescription="@null" />
+</androidx.constraintlayout.widget.ConstraintLayout>
